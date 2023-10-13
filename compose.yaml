@@ -1,0 +1,12 @@
+services:
+  # service名称
+  jar-build:
+    # 编译路径
+    build: ./DockerJarBuild
+    # 本地监听端口
+    ports:
+      - "8080:8080"
+  common-build:
+    build: .
+    ports:
+      - "7003:8080"
